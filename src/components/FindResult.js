@@ -12,15 +12,6 @@ import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-nat
 const FindResult = ({ navigation, route }) => {
   const { data } = route.params;
 
-  useEffect(() => {
-    AdMobInterstitial.setAdUnitID(env.ADMOB_RESULT_SCREEN);
-    AdMobInterstitial.addEventListener("adLoaded", () => {
-      AdMobInterstitial.isReady(() => AdMobInterstitial.showAd());
-    });
-    AdMobInterstitial.requestAd().catch((e) => console.log(e));
-    () => AdMobInterstitial.removeAllListeners();
-  }, []);
-
   const showSuccess = () => {
     ToastAndroid.showWithGravityAndOffset(
       "Adres başarıyla kaydedildi!",
@@ -71,6 +62,28 @@ const FindResult = ({ navigation, route }) => {
     storeData("@registered", arrList);
   };
 
+  const getInterstitialAd = (id) => {
+    AdMobInterstitial.setAdUnitID(id);
+    AdMobInterstitial.addEventListener("adLoaded", () => {
+      console.log("interstitial loaded success");
+    });
+    AdMobInterstitial.requestAd()
+      .then(() => {
+        console.log("interstitial request success");
+      })
+      .catch((e) => {
+        console.log(e.message, "catch | requestAd");
+      });
+  };
+
+  useEffect(() => {
+    getInterstitialAd(env.RESULT_INTERSTITIAL);
+
+    return () => {
+      AdMobInterstitial.removeAllListeners();
+    };
+  }, []);
+
   return (
     <View style={styles.container}>
       <View style={styles.resultImageView}>
@@ -116,7 +129,20 @@ const FindResult = ({ navigation, route }) => {
           <Text style={styles.addressCodeButtonText}>{data.value}</Text>
         </TouchableOpacity>
         <View style={styles.bottomButtonsView}>
-          <TouchableOpacity style={styles.homeButton} activeOpacity={0.9} onPress={() => navigation.navigate("Home")}>
+          <TouchableOpacity
+            style={styles.homeButton}
+            activeOpacity={0.9}
+            onPress={() => {
+              AdMobInterstitial.showAd()
+                .then(() => {
+                  console.log("ad show correctly");
+                  AdMobInterstitial.removeAllListeners();
+                })
+                .catch((e) => console.log(e.message, "catch | showAd"));
+
+              navigation.navigate("Home");
+            }}
+          >
             <Ionicons name="home-sharp" size={36} color="white" />
           </TouchableOpacity>
           <TouchableOpacity
