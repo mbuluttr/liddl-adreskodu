@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { StyleSheet, Text, View, TouchableOpacity, ToastAndroid } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import myConstants from "../constants/myConstants";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import * as Animatable from "react-native-animatable";
-import { AdMobInterstitial } from "react-native-admob";
-import { env } from "../../environments";
 
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-native-responsive-screen";
 
@@ -62,28 +60,6 @@ const FindResult = ({ navigation, route }) => {
     storeData("@registered", arrList);
   };
 
-  const getInterstitialAd = (id) => {
-    AdMobInterstitial.setAdUnitID(id);
-    AdMobInterstitial.addEventListener("adLoaded", () => {
-      console.log("interstitial loaded success");
-    });
-    AdMobInterstitial.requestAd()
-      .then(() => {
-        console.log("interstitial request success");
-      })
-      .catch((e) => {
-        console.log(e.message, "catch | requestAd");
-      });
-  };
-
-  useEffect(() => {
-    getInterstitialAd(env.RESULT_INTERSTITIAL);
-
-    return () => {
-      AdMobInterstitial.removeAllListeners();
-    };
-  }, []);
-
   return (
     <View style={styles.container}>
       <View style={styles.resultImageView}>
@@ -129,20 +105,7 @@ const FindResult = ({ navigation, route }) => {
           <Text style={styles.addressCodeButtonText}>{data.value}</Text>
         </TouchableOpacity>
         <View style={styles.bottomButtonsView}>
-          <TouchableOpacity
-            style={styles.homeButton}
-            activeOpacity={0.9}
-            onPress={() => {
-              AdMobInterstitial.showAd()
-                .then(() => {
-                  console.log("ad show correctly");
-                  AdMobInterstitial.removeAllListeners();
-                })
-                .catch((e) => console.log(e.message, "catch | showAd"));
-
-              navigation.navigate("Home");
-            }}
-          >
+          <TouchableOpacity style={styles.homeButton} activeOpacity={0.9} onPress={() => navigation.navigate("Home")}>
             <Ionicons name="home-sharp" size={36} color="white" />
           </TouchableOpacity>
           <TouchableOpacity

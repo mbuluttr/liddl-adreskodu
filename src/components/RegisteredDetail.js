@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import myConstants from "../constants/myConstants";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -6,8 +6,6 @@ import { heightPercentageToDP as hp, widthPercentageToDP as wp } from "react-nat
 import InformationModal from "../components/InformationModal";
 import * as Animatable from "react-native-animatable";
 import Ionicons from "react-native-vector-icons/Ionicons";
-import { AdMobInterstitial } from "react-native-admob";
-import { env } from "../../environments";
 
 const RegisteredDetail = ({ navigation, route }) => {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -34,28 +32,6 @@ const RegisteredDetail = ({ navigation, route }) => {
     storeData("@registered", newAddressList);
   };
 
-  const getInterstitialAd = (id) => {
-    AdMobInterstitial.setAdUnitID(id);
-    AdMobInterstitial.addEventListener("adLoaded", () => {
-      console.log("interstitial loaded success");
-    });
-    AdMobInterstitial.requestAd()
-      .then(() => {
-        console.log("interstitial request success");
-      })
-      .catch((e) => {
-        console.log(e.message, "catch | requestAd");
-      });
-  };
-
-  useEffect(() => {
-    getInterstitialAd(env.DETAIL_INTERSTITIAL);
-
-    return () => {
-      AdMobInterstitial.removeAllListeners();
-    };
-  }, []);
-
   return (
     <View style={styles.container}>
       <View style={styles.resultImageView}>
@@ -77,20 +53,7 @@ const RegisteredDetail = ({ navigation, route }) => {
           <Text style={styles.addressCodeButtonText}>{detail.value}</Text>
         </TouchableOpacity>
         <View style={styles.bottomButtonsView}>
-          <TouchableOpacity
-            style={styles.homeButton}
-            activeOpacity={0.9}
-            onPress={() => {
-              AdMobInterstitial.showAd()
-                .then(() => {
-                  console.log("ad show correctly");
-                  AdMobInterstitial.removeAllListeners();
-                })
-                .catch((e) => console.log(e.message, "catch | showAd"));
-
-              navigation.navigate("Home");
-            }}
-          >
+          <TouchableOpacity style={styles.homeButton} activeOpacity={0.9} onPress={() => navigation.navigate("Home")}>
             <Ionicons name="home-sharp" size={36} color="white" />
           </TouchableOpacity>
           <TouchableOpacity
