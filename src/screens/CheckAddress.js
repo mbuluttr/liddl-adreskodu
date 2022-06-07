@@ -20,7 +20,6 @@ const CheckAddress = ({ navigation }) => {
   const [indicator, setIndicator] = useState(false);
   const [code, setCode] = useState("");
   const [isModalVisible, setModalVisible] = useState(false);
-  const [validation, setValidation] = useState(false);
 
   const modalHandler = () => {
     setModalVisible(!isModalVisible);
@@ -73,21 +72,13 @@ const CheckAddress = ({ navigation }) => {
               style={styles.textInput}
               onChangeText={(text) => setCode(text)}
             />
-            {validation ? (
-              <Text style={{ color: "red", textAlign: "center", marginTop: 3 }}>
-                Adres kodu 10 rakamdan oluşmalıdır!
-              </Text>
-            ) : null}
           </View>
           <TouchableOpacity
             activeOpacity={0.9}
             style={styles.button}
             onPress={() => {
-              if (code.length === 10 && Number(code)) {
-                setValidation(false);
+              if (Number(code)) {
                 getData(code);
-              } else {
-                setValidation(true);
               }
             }}
           >
