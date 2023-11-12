@@ -1,0 +1,178 @@
+[
+  {"adi": "ADANA", "bilesenAdi": "ADANA", "ilKayitNo": 1, "kimlikNo": 1},
+  {"adi": "ADIYAMAN", "bilesenAdi": "ADIYAMAN", "ilKayitNo": 2, "kimlikNo": 2},
+  {
+    "adi": "AFYONKARAHİSAR",
+    "bilesenAdi": "AFYONKARAHİSAR",
+    "ilKayitNo": 3,
+    "kimlikNo": 3
+  },
+  {"adi": "AĞRI", "bilesenAdi": "AĞRI", "ilKayitNo": 4, "kimlikNo": 4},
+  {"adi": "AKSARAY", "bilesenAdi": "AKSARAY", "ilKayitNo": 68, "kimlikNo": 68},
+  {"adi": "AMASYA", "bilesenAdi": "AMASYA", "ilKayitNo": 5, "kimlikNo": 5},
+  {"adi": "ANKARA", "bilesenAdi": "ANKARA", "ilKayitNo": 6, "kimlikNo": 6},
+  {"adi": "ANTALYA", "bilesenAdi": "ANTALYA", "ilKayitNo": 7, "kimlikNo": 7},
+  {"adi": "ARDAHAN", "bilesenAdi": "ARDAHAN", "ilKayitNo": 75, "kimlikNo": 75},
+  {"adi": "ARTVİN", "bilesenAdi": "ARTVİN", "ilKayitNo": 8, "kimlikNo": 8},
+  {"adi": "AYDIN", "bilesenAdi": "AYDIN", "ilKayitNo": 9, "kimlikNo": 9},
+  {
+    "adi": "BALIKESİR",
+    "bilesenAdi": "BALIKESİR",
+    "ilKayitNo": 10,
+    "kimlikNo": 10
+  },
+  {"adi": "BARTIN", "bilesenAdi": "BARTIN", "ilKayitNo": 74, "kimlikNo": 74},
+  {"adi": "BATMAN", "bilesenAdi": "BATMAN", "ilKayitNo": 72, "kimlikNo": 72},
+  {"adi": "BAYBURT", "bilesenAdi": "BAYBURT", "ilKayitNo": 69, "kimlikNo": 69},
+  {"adi": "BİLECİK", "bilesenAdi": "BİLECİK", "ilKayitNo": 11, "kimlikNo": 11},
+  {"adi": "BİNGÖL", "bilesenAdi": "BİNGÖL", "ilKayitNo": 12, "kimlikNo": 12},
+  {"adi": "BİTLİS", "bilesenAdi": "BİTLİS", "ilKayitNo": 13, "kimlikNo": 13},
+  {"adi": "BOLU", "bilesenAdi": "BOLU", "ilKayitNo": 14, "kimlikNo": 14},
+  {"adi": "BURDUR", "bilesenAdi": "BURDUR", "ilKayitNo": 15, "kimlikNo": 15},
+  {"adi": "BURSA", "bilesenAdi": "BURSA", "ilKayitNo": 16, "kimlikNo": 16},
+  {
+    "adi": "ÇANAKKALE",
+    "bilesenAdi": "ÇANAKKALE",
+    "ilKayitNo": 17,
+    "kimlikNo": 17
+  },
+  {"adi": "ÇANKIRI", "bilesenAdi": "ÇANKIRI", "ilKayitNo": 18, "kimlikNo": 18},
+  {"adi": "ÇORUM", "bilesenAdi": "ÇORUM", "ilKayitNo": 19, "kimlikNo": 19},
+  {"adi": "DENİZLİ", "bilesenAdi": "DENİZLİ", "ilKayitNo": 20, "kimlikNo": 20},
+  {
+    "adi": "DİYARBAKIR",
+    "bilesenAdi": "DİYARBAKIR",
+    "ilKayitNo": 21,
+    "kimlikNo": 21
+  },
+  {"adi": "DÜZCE", "bilesenAdi": "DÜZCE", "ilKayitNo": 81, "kimlikNo": 81},
+  {"adi": "EDİRNE", "bilesenAdi": "EDİRNE", "ilKayitNo": 22, "kimlikNo": 22},
+  {"adi": "ELAZIĞ", "bilesenAdi": "ELAZIĞ", "ilKayitNo": 23, "kimlikNo": 23},
+  {
+    "adi": "ERZİNCAN",
+    "bilesenAdi": "ERZİNCAN",
+    "ilKayitNo": 24,
+    "kimlikNo": 24
+  },
+  {"adi": "ERZURUM", "bilesenAdi": "ERZURUM", "ilKayitNo": 25, "kimlikNo": 25},
+  {
+    "adi": "ESKİŞEHİR",
+    "bilesenAdi": "ESKİŞEHİR",
+    "ilKayitNo": 26,
+    "kimlikNo": 26
+  },
+  {
+    "adi": "GAZİANTEP",
+    "bilesenAdi": "GAZİANTEP",
+    "ilKayitNo": 27,
+    "kimlikNo": 27
+  },
+  {"adi": "GİRESUN", "bilesenAdi": "GİRESUN", "ilKayitNo": 28, "kimlikNo": 28},
+  {
+    "adi": "GÜMÜŞHANE",
+    "bilesenAdi": "GÜMÜŞHANE",
+    "ilKayitNo": 29,
+    "kimlikNo": 29
+  },
+  {"adi": "HAKKARİ", "bilesenAdi": "HAKKARİ", "ilKayitNo": 30, "kimlikNo": 30},
+  {"adi": "HATAY", "bilesenAdi": "HATAY", "ilKayitNo": 31, "kimlikNo": 31},
+  {"adi": "IĞDIR", "bilesenAdi": "IĞDIR", "ilKayitNo": 76, "kimlikNo": 76},
+  {"adi": "ISPARTA", "bilesenAdi": "ISPARTA", "ilKayitNo": 32, "kimlikNo": 32},
+  {
+    "adi": "İSTANBUL",
+    "bilesenAdi": "İSTANBUL",
+    "ilKayitNo": 34,
+    "kimlikNo": 34
+  },
+  {"adi": "İZMİR", "bilesenAdi": "İZMİR", "ilKayitNo": 35, "kimlikNo": 35},
+  {
+    "adi": "KAHRAMANMARAŞ",
+    "bilesenAdi": "KAHRAMANMARAŞ",
+    "ilKayitNo": 46,
+    "kimlikNo": 46
+  },
+  {"adi": "KARABÜK", "bilesenAdi": "KARABÜK", "ilKayitNo": 78, "kimlikNo": 78},
+  {"adi": "KARAMAN", "bilesenAdi": "KARAMAN", "ilKayitNo": 70, "kimlikNo": 70},
+  {"adi": "KARS", "bilesenAdi": "KARS", "ilKayitNo": 36, "kimlikNo": 36},
+  {
+    "adi": "KASTAMONU",
+    "bilesenAdi": "KASTAMONU",
+    "ilKayitNo": 37,
+    "kimlikNo": 37
+  },
+  {"adi": "KAYSERİ", "bilesenAdi": "KAYSERİ", "ilKayitNo": 38, "kimlikNo": 38},
+  {
+    "adi": "KIRIKKALE",
+    "bilesenAdi": "KIRIKKALE",
+    "ilKayitNo": 71,
+    "kimlikNo": 71
+  },
+  {
+    "adi": "KIRKLARELİ",
+    "bilesenAdi": "KIRKLARELİ",
+    "ilKayitNo": 39,
+    "kimlikNo": 39
+  },
+  {
+    "adi": "KIRŞEHİR",
+    "bilesenAdi": "KIRŞEHİR",
+    "ilKayitNo": 40,
+    "kimlikNo": 40
+  },
+  {"adi": "KİLİS", "bilesenAdi": "KİLİS", "ilKayitNo": 79, "kimlikNo": 79},
+  {"adi": "KOCAELİ", "bilesenAdi": "KOCAELİ", "ilKayitNo": 41, "kimlikNo": 41},
+  {"adi": "KONYA", "bilesenAdi": "KONYA", "ilKayitNo": 42, "kimlikNo": 42},
+  {"adi": "KÜTAHYA", "bilesenAdi": "KÜTAHYA", "ilKayitNo": 43, "kimlikNo": 43},
+  {"adi": "MALATYA", "bilesenAdi": "MALATYA", "ilKayitNo": 44, "kimlikNo": 44},
+  {"adi": "MANİSA", "bilesenAdi": "MANİSA", "ilKayitNo": 45, "kimlikNo": 45},
+  {"adi": "MARDİN", "bilesenAdi": "MARDİN", "ilKayitNo": 47, "kimlikNo": 47},
+  {"adi": "MERSİN", "bilesenAdi": "MERSİN", "ilKayitNo": 33, "kimlikNo": 33},
+  {"adi": "MUĞLA", "bilesenAdi": "MUĞLA", "ilKayitNo": 48, "kimlikNo": 48},
+  {"adi": "MUŞ", "bilesenAdi": "MUŞ", "ilKayitNo": 49, "kimlikNo": 49},
+  {
+    "adi": "NEVŞEHİR",
+    "bilesenAdi": "NEVŞEHİR",
+    "ilKayitNo": 50,
+    "kimlikNo": 50
+  },
+  {"adi": "NİĞDE", "bilesenAdi": "NİĞDE", "ilKayitNo": 51, "kimlikNo": 51},
+  {"adi": "ORDU", "bilesenAdi": "ORDU", "ilKayitNo": 52, "kimlikNo": 52},
+  {
+    "adi": "OSMANİYE",
+    "bilesenAdi": "OSMANİYE",
+    "ilKayitNo": 80,
+    "kimlikNo": 80
+  },
+  {"adi": "RİZE", "bilesenAdi": "RİZE", "ilKayitNo": 53, "kimlikNo": 53},
+  {"adi": "SAKARYA", "bilesenAdi": "SAKARYA", "ilKayitNo": 54, "kimlikNo": 54},
+  {"adi": "SAMSUN", "bilesenAdi": "SAMSUN", "ilKayitNo": 55, "kimlikNo": 55},
+  {"adi": "SİİRT", "bilesenAdi": "SİİRT", "ilKayitNo": 56, "kimlikNo": 56},
+  {"adi": "SİNOP", "bilesenAdi": "SİNOP", "ilKayitNo": 57, "kimlikNo": 57},
+  {"adi": "SİVAS", "bilesenAdi": "SİVAS", "ilKayitNo": 58, "kimlikNo": 58},
+  {
+    "adi": "ŞANLIURFA",
+    "bilesenAdi": "ŞANLIURFA",
+    "ilKayitNo": 63,
+    "kimlikNo": 63
+  },
+  {"adi": "ŞIRNAK", "bilesenAdi": "ŞIRNAK", "ilKayitNo": 73, "kimlikNo": 73},
+  {
+    "adi": "TEKİRDAĞ",
+    "bilesenAdi": "TEKİRDAĞ",
+    "ilKayitNo": 59,
+    "kimlikNo": 59
+  },
+  {"adi": "TOKAT", "bilesenAdi": "TOKAT", "ilKayitNo": 60, "kimlikNo": 60},
+  {"adi": "TRABZON", "bilesenAdi": "TRABZON", "ilKayitNo": 61, "kimlikNo": 61},
+  {"adi": "TUNCELİ", "bilesenAdi": "TUNCELİ", "ilKayitNo": 62, "kimlikNo": 62},
+  {"adi": "UŞAK", "bilesenAdi": "UŞAK", "ilKayitNo": 64, "kimlikNo": 64},
+  {"adi": "VAN", "bilesenAdi": "VAN", "ilKayitNo": 65, "kimlikNo": 65},
+  {"adi": "YALOVA", "bilesenAdi": "YALOVA", "ilKayitNo": 77, "kimlikNo": 77},
+  {"adi": "YOZGAT", "bilesenAdi": "YOZGAT", "ilKayitNo": 66, "kimlikNo": 66},
+  {
+    "adi": "ZONGULDAK",
+    "bilesenAdi": "ZONGULDAK",
+    "ilKayitNo": 67,
+    "kimlikNo": 67
+  }
+]

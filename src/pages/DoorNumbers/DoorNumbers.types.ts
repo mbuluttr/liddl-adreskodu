@@ -1,0 +1,27 @@
+export type DoorNumber = {
+  acikAdresModel: undefined;
+  ada: undefined;
+  adi: string;
+  adresNo: number;
+  bilesenAdi: string;
+  binaKayitNo: number;
+  binaNo: undefined;
+  blokAdi: undefined;
+  disKapiNo: undefined;
+  icKapiNo: string;
+  katNo: string;
+  kimlikNo: number;
+  maksBbDurum: number;
+  maksBbDurumFormatted: string;
+  maksBbTip: number;
+  maksBbTipFormatted: string;
+  maksBinaNumaratajTipi: undefined;
+  maksBinaNumaratajTipiFormatted: string;
+  pafta: undefined;
+  parsel: undefined;
+  postaKodu: undefined;
+  siteAdi: undefined;
+  tapuBagimsizBolumNo: undefined;
+  yapiKullanimAmac: number;
+  yapiKullanimAmacFormatted: string;
+};

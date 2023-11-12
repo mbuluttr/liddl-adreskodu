@@ -1,0 +1,25 @@
+export type Building = {
+  ada: string;
+  adi: string;
+  bagimsizBolumler: undefined;
+  bilesenAdi: string;
+  binaNo: number;
+  binaTur: number;
+  binaYapiTipi: number;
+  blokAdi: string;
+  csbmKayitNo: number;
+  disKapiNo1: number;
+  disKapiNo2: undefined;
+  disKapiNoFormatted: string;
+  esKayitNo: undefined;
+  kimlikNo: number;
+  maksBinaDurum: number;
+  maksBinaNumaratajTipi: number;
+  note: undefined;
+  pafta: string;
+  parsel: string;
+  postaKodu: undefined;
+  siteAdi: undefined;
+  yolAltiKatSayisi: number;
+  yolUstuKatSayisi: number;
+};
