@@ -50,6 +50,7 @@ const Verification = () => {
           onChangeText={text => setCode(text)}
           placeholder={'Adres kodu'}
           placeholderTextColor={Colors.darkBlue}
+          keyboardType={'number-pad'}
         />
         <Spacer size={24} />
         <Button
